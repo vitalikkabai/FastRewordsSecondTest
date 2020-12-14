@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import firebase from 'firebase/app';
+import PropTypes from 'prop-types';
 
-const Graph = () => {
+const Graph = ({ loginsData }) => {
   const signOut = () => {
     firebase.auth().signOut();
   };
@@ -28,6 +29,10 @@ const Graph = () => {
       </footer>
     </div>
   );
+};
+
+Graph.propTypes = {
+  loginsData: PropTypes.object.isRequired,
 };
 
 export default Graph;
