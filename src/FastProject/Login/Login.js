@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import firebase from 'firebase/app';
 import fire from '../fire/fire';
-import firebase from 'firebase';
 
 const Login = (props) => {
   const history = useHistory();
