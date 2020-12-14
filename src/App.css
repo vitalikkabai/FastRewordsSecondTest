@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+body {
+
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+.loginPage {
+  background: #5A5A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginArea {
+  width: 588px;
+  height: 576px;
+  background: #E9ECF3;
+  border: 9px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 57px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginArea h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+  letter-spacing: 0.0075em;
+  margin-top: 140px;
+  margin-bottom: 0;
+
+}
+
+.loginArea button {
+  background: #3F91FF;
+  border-radius: 35px;
+  width: 229px;
+  height: 60px;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonArea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 98px;
+  height: 144px;
+  justify-content: space-between;
+}
+
+@media(max-width: 600px) {
+  .loginArea {
+    width: 313px;
+    height: 535px;
+  }
+
+  .loginArea button {
+    width: 159px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: Ubuntu;
+  }
+
+  .buttonArea {
+    height: 101px;
+    margin-top: 55px;
+  }
+
+  .loginArea h1 {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0.0075em;
+  }
+}
+
+.graphPage {
+  height: 100vh;
+  width: 100vw;
+  background: #FFFFFF;
+}
+
+.graphPage header {
+  height: 108px;
+  width: 100vw;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(142, 148, 160, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.startedButton {
+  font-family: Ubuntu;
+  background: #3F91FF;
+  border-radius: 25px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 183px;
+  height: 48px;
+  pointer-events: none;
+  border: none;
+  margin-left: 50px;
+}
+
+.logOutButton {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #868686;
+  font-family: Ubuntu;
+  background: inherit;
+  border: none;
+  text-decoration: underline;
+  pointer-events: none;
+  margin-right: 50px;
+}
+
+.graphSector{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graphSector h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 53px;
+  color: black;
+  margin-top: 38px;
+  margin-bottom: 0;
+}
+
+.graphSector h2 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  color: #868686;
+  margin: 0;
+}
+
+.graphPage footer {
+  height: 10vh;
+  background: #ffffff;
+}
+.graph {
+  width: 975px;
+  height: 433px;
+  background-color: aqua;
+  margin-top: 55px;
+}
+
+.backButton {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: inherit;
+  border: inherit;
+  display: flex;
+  align-items: center;
+  padding-left: 46px;
+}
+
+.startPage header {
+  height: 108px;
+  width: 100vw;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(142, 148, 160, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.startPictures {
+  width: 1267px;
+  height: 962px;
+  background: url(./FastProject/img/screenshot006.png);
+}
+
+.startPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.arrow {
+  height: 20px;
+  width: 20px;
+  background: url(./FastProject/img/icon/navigation/arrow_back_24px.svg) no-repeat;
+  padding-right: 12px;
+  pointer-events: none;
+}
+
+
+.backButton p:hover{
+  text-decoration: none !important;
+}
