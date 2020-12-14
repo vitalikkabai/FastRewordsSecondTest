@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import fire from '../fire/fire';
+import firebase from 'firebase/app';
 
 const Graph = () => {
   const signOut = () => {
-    fire.auth().signOut();
+    firebase.auth().signOut();
   };
 
   return (
@@ -16,9 +16,7 @@ const Graph = () => {
           </button>
         </Link>
 
-        <Link to="/">
-          <button type="button" className="logOutButton" onClick={signOut}>Log out</button>
-        </Link>
+        <button type="button" className="logOutButton" onClick={signOut}>Log out</button>
       </header>
       <section className="graphSector">
         <h1>Logs info</h1>
